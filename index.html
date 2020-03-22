@@ -8,25 +8,44 @@
       href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/3f0354b14f.js"
+      crossorigin="anonymous"
+    ></script>
     <title>RB Portfolio</title>
   </head>
+
   <body>
     <main>
       <nav id="navbar">
-        <a href="#welcome-section">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <img id="logo" src="./images/Logo.jpg" alt="logo" />
+        <a class="nav-link" href="#welcome-section">About</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
       </nav>
 
       <section id="welcome-section">
-        <h1>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
-          veritatis a et aliquid qui unde quis quae laboriosam tempora deleniti?
-        </h1>
+        <div id="div1">
+          <h1>
+            Hey, i am Rédha BOUBAKOUR and sooner of later, i will become a web
+            developper.
+          </h1>
+        </div>
+        <div id="div2">
+          <p>
+            This is my Portfolio. Through him, you will understand exactly from
+            where i started.
+          </p>
+        </div>
+        <div id="div3">
+          <p>"A long journey" they said... They were probably right.</p>
+        </div>
       </section>
 
+      <h1>My projects</h1>
+
       <section id="projects">
-        <div class="project-tile">
+        <div class="project-tile" id="project1">
           <a
             href="https://redha-boubakour.github.io/Tribute-Page.github.io/"
             target="_blank"
@@ -34,7 +53,7 @@
           </a>
         </div>
 
-        <div class="project-tile">
+        <div class="project-tile" id="project2">
           <a
             href="https://redha-boubakour.github.io/survey-form.github.io/"
             target="_blank"
@@ -42,7 +61,7 @@
           </a>
         </div>
 
-        <div class="project-tile">
+        <div class="project-tile" id="project3">
           <a
             href="https://redha-boubakour.github.io/Product-landing-page.github.io/"
             target="_blank"
@@ -50,7 +69,7 @@
           </a>
         </div>
 
-        <div class="project-tile">
+        <div class="project-tile" id="project4">
           <a
             href="https://redha-boubakour.github.io/Documentation-page.github.io/"
             target="_blank"
@@ -61,6 +80,7 @@
 
       <section id="contact">
         <div>
+          <i class="fab fa-github"></i>
           <a
             class="link"
             id="profile-link"
@@ -71,14 +91,19 @@
         </div>
 
         <div>
+          <i class="fab fa-free-code-camp"></i>
           <a
             class="link"
             href="https://www.freecodecamp.org/redikan"
             target="_blank"
-            >My freecodecamp profile
+            >My FreeCodeCamp profile
           </a>
         </div>
       </section>
+
+      <footer>
+        Rédha BOUBAKOUR &copy
+      </footer>
     </main>
   </body>
 </html>

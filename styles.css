@@ -1,4 +1,118 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: "Roboto", sans-serif;
+}
+
+#navbar {
+  background-color: #e84855;
+  display: flex;
+  text-align: right;
+  padding: 15px;
+  position: sticky;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f2f3ae;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 14px 20px;
+}
+
+#logo {
+  max-width: 50px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+#welcome-section {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  position: relative;
+  padding: 20%;
+  background-color: #272932;
+  color: #f2f3ae;
+}
+
+#div1 {
+  padding-bottom: 50px;
+  font-size: 22px;
+}
+
+#projects {
+  background-color: #be7c4d;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-template-areas:
+    "my-projects  my-projects"
+    "project1     project2"
+    "project3     project4";
+  text-align: center;
+}
+
+.project-tile {
+  padding: 50px;
+}
+
+#my-projects {
+  grid-area: my-projects;
+}
+
+#project1 {
+  grid-area: project1;
+}
+
+#project2 {
+  grid-area: project2;
+}
+
+#project3 {
+  grid-area: project3;
+}
+
+#project4 {
+  grid-area: project4;
+}
+
+#contact {
+  background-color: #3a606e;
+}
+
+footer {
+  background-color: #e84855;
+  text-align: center;
+  padding: 25px;
+  color: #f2f3ae;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "my-projects"
+      "project1"
+      "project2"
+      "project3"
+      "project4";
+  }
+
+  .project-tile {
+    padding: 20px;
+  }
 }
