@@ -92,6 +92,15 @@ section img {
   padding-right: 22px;
 }
 
+.project-tile {
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
+}
+
 #my-projects {
   grid-area: my-projects;
 }
