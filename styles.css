@@ -13,8 +13,9 @@ body {
   display: flex;
   text-align: right;
   position: sticky;
-  width: 100%;
+  max-width: 100%;
   height: 10vh;
+  z-index: 0;
 }
 
 nav a {
@@ -58,6 +59,7 @@ section a {
   justify-content: center;
   flex-direction: column;
   height: 90vh;
+  max-width: 100%;
   position: relative;
   padding: 0 20%;
   background-color: #272932;
@@ -72,6 +74,7 @@ section a {
 #projects {
   background-color: #c6b38e;
   height: 100vh;
+  max-width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -87,15 +90,6 @@ section a {
 section img {
   max-width: 150px;
   padding-right: 22px;
-}
-
-.project-tile {
-  padding: 0 15vw;
-  transition: transform 0.3s ease;
-}
-
-.project-tile:hover {
-  transform: scale(1.1);
 }
 
 #my-projects {
@@ -122,6 +116,7 @@ section img {
   background-color: #272932;
   color: #f2f3ae;
   height: 90vh;
+  max-width: 100%;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -152,6 +147,7 @@ footer {
   align-items: center;
   justify-content: center;
   height: 10vh;
+  width: 100%;
   color: #f2f3ae;
   font-size: 20px;
   font-weight: bold;
