@@ -8,6 +8,8 @@ body {
   padding: 0;
 }
 
+/* The navigation bar */
+
 #navbar {
   background-color: #e84855;
   display: flex;
@@ -26,9 +28,15 @@ nav a {
   padding: 25px 20px;
 }
 
-#contact a {
-  color: #f2f3ae;
+#logo {
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  margin-right: auto;
+  cursor: pointer;
 }
+
+/* the sections ALL */
 
 section a {
   text-decoration: none;
@@ -38,20 +46,7 @@ section a {
   padding: 25px 20px;
 }
 
-#logo {
-  width: 50px;
-  height: 50px;
-  margin: 12px;
-  margin-right: auto;
-  cursor: pointer;
-}
-
-.fa-free-code-camp,
-.fa-github {
-  font-size: 60px;
-  padding: 5px;
-  padding-right: 25px;
-}
+/* The welcome section */
 
 #welcome-section {
   display: flex;
@@ -70,6 +65,8 @@ section a {
   padding-bottom: 50px;
   font-size: 22px;
 }
+
+/* The projects section */
 
 #projects {
   background-color: #c6b38e;
@@ -121,6 +118,8 @@ section img {
   grid-area: project4;
 }
 
+/* The contact-media section */
+
 #contact {
   background-color: #272932;
   color: #f2f3ae;
@@ -137,6 +136,17 @@ section img {
     "github       freecodecamp";
 }
 
+.fa-free-code-camp,
+.fa-github {
+  font-size: 60px;
+  padding: 5px;
+  padding-right: 25px;
+}
+
+#contact a {
+  color: #f2f3ae;
+}
+
 #my-medias {
   grid-area: my-medias;
 }
@@ -148,6 +158,8 @@ section img {
 #freecodecamp {
   grid-area: freecodecamp;
 }
+
+/* The footer */
 
 footer {
   background-color: #e84855;
@@ -161,6 +173,8 @@ footer {
   font-size: 20px;
   font-weight: bold;
 }
+
+/* The media query */
 
 @media (max-width: 600px) {
   #projects {
