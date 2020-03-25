@@ -49,6 +49,7 @@ section a {
 .fa-github {
   font-size: 60px;
   padding: 5px;
+  padding-right: 25px;
 }
 
 #welcome-section {
@@ -90,6 +91,11 @@ section img {
 
 .project-tile {
   padding: 0 15vw;
+  transition: transform 0.3s ease;
+}
+
+.project-tile:hover {
+  transform: scale(1.1);
 }
 
 #my-projects {
