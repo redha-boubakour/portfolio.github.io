@@ -85,6 +85,7 @@ section a {
 
 img {
   max-width: 150px;
+  padding-right: 22px;
 }
 
 .project-tile {
@@ -114,7 +115,7 @@ img {
 #contact {
   background-color: #272932;
   color: #f2f3ae;
-  height: 100vh;
+  height: 90vh;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -140,8 +141,11 @@ img {
 
 footer {
   background-color: #e84855;
+  display: flex;
   text-align: center;
-  padding: 25px;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
   color: #f2f3ae;
   font-size: 20px;
   font-weight: bold;
@@ -162,7 +166,6 @@ footer {
   }
 
   #contact {
-    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr 1fr;
